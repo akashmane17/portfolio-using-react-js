@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/* other css file imports */
+@import url("sections/navbar.css");
+@import url("sections/hero.css");
+@import url("sections/skills.css");
+@import url("sections/card.css");
+@import url("sections/contactMe.css");
+@import url("sections/footer.css");
+
+/* CSS variables for reusablity across all files (including above imported) */
+:root {
+  --playfair-display: "Playfair Display", serif;
+  --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  --poppins: 'Poppins', sans-serif;
+
+  --primary-color: #ff4a57;
+  --secondary-color: #23263a;
+  ;
+
+  --dark-200: #161724;
+  --dark-300: #1e2031;
+  --dark-400: #212336;
+  --dark-500: #2b2d41;
+  --dark-500: #383a53;
+  --gray-100: #787c99;
+
+  --color-white: #fff;
+  --color-creamson: #fff0de;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  font-family: var(--plus-jakarta-sans);
+  padding: 15px 50px;
+  background-color: var(--primary-color);;
+  border: none;
+  color: var(--color-white);
+  box-shadow: 5px 5px 5px #1e2031;
+  cursor: pointer;
+  transition: 300ms; 
+}
+
+.btn:hover {
+  background-color: #ff838b;
+}
+
+.sidebar {
+  background-color: #161724;
+  width: 170px;
+  margin-top: 5px;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1.2;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px;
+  list-style: none;
+  color: #fff;
+}
+
+.sidebar li {
+  width: 150px;
+  padding: 10px;
+  background-color: #212336;
+  font-size: 16px;
+  line-height: 25px;
+  opacity: 0.9;
+  transition: 300ms;
+  text-align: center;
+}
+
+.sidebar li:hover {
+  color: var(--primary-color);
+  border-radius: 8px;
+  background-color: #2b2d41;
+}
+
+.slideInLeft {
+  animation: slideLeft 0.7s ease-in both;
+  animation-timing-function: ease-in;
+}
+
+.slideInUp {
+  animation: slideUp 0.7s ease-in both;
+  animation-timing-function: ease-in;
+}
+
+
+
+/* MEDIA QUERIES  */
+@media screen and (max-width: 780px) {
+
+  .menu-list {
+    display: none;
+  }
+
+  .logo {
+    justify-content: flex-end;
+  }
+
+  .menu-bar {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu-bar .icon {
+    width: 32px;
+    height: 32px;
+    font-size: 30px;
+    transition: 300ms;
+  }
+
+  .menu-bar .icon:hover {
+    color: #fff;
+  }
+
+  .hero-heading {
+    font-size: 45px;
+    line-height: 65px;
+  }
+
+  .hero-content {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .skills {
+    margin-top: 100px;
+  }
+
+  .contact {
+    margin-top: 100px;
+  }
+
+  .footer {
+    margin-top: 150px;
+  }
+
+  .contact-me {
+    width: 90%;
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .hero-heading {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .hero-content {
+    width: 250px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .contact-me {
+    width: 100%;
+  }
+
+}

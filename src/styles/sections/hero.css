@@ -1,0 +1,34 @@
+.hero {
+  display: flex;
+  overflow: hidden;
+
+  margin-top: 100px;
+  padding: 20px;
+  font-family: var(--plus-jakarta-sans);
+}
+
+.hero .left {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.hero-heading {
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 85px;
+  color: var(--color-white);
+}
+
+.hero-heading span {
+  display: block;
+}
+
+.hero-content {
+  color: var(--gray-100);
+  font-size: 20px;
+  line-height: 35px;
+  width: 60%;
+}

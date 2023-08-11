@@ -1,0 +1,71 @@
+.skills {
+  overflow: hidden;
+
+  margin-top: 200px;
+  padding: 20px;
+}
+
+.skills-heading {
+  padding: 20px 0;
+}
+
+.skills-heading h2{
+  font-family: var(--playfair-display);
+  font-size: 30px;
+  line-height: 45px;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+}
+
+.skills-heading span {
+  text-decoration: underline;
+  text-underline-offset: 20px;
+}
+
+.cards {
+  margin-top: 10px;
+  padding: 20px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--dark--500);
+  box-shadow: 0px 0px 40px #161724;
+  transition: 300ms;
+}
+
+.cards .card:hover {
+  box-shadow: 0px 0px 15px #ff4a57;
+}
+
+.icon {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  color: #ff4a57;
+  font-size: 60px;
+}
+
+.card h3 {
+  width: 220px;
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+
+.card p {
+  width: 220px;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--color-white);
+  font-family: var(--plus-jakarta-sans);
+}
